@@ -12,6 +12,10 @@ This module teaches three essential React concepts:
 
 ---
 
+<p align="center">
+  <img src="img/reactlist.png" alt="React Flow" width="700">
+</p>
+
 # Part 1 — React Lists
 
 ## 1. What is a List?
