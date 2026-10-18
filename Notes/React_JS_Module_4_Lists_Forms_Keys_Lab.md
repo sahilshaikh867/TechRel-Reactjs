@@ -201,20 +201,6 @@ function App() {
 }
 ```
 
-## List Rendering Diagram
-
-```mermaid
-flowchart TD
-A[Array] --> B[map()]
-B --> C[Item 1]
-B --> D[Item 2]
-B --> E[Item 3]
-C --> F[JSX]
-D --> F
-E --> F
-F --> G[React UI]
-```
-
 ---
 
 # Part 2 — React Forms
@@ -234,16 +220,7 @@ Examples:
 - job application
 - feedback
 
-Typical flow:
 
-```mermaid
-flowchart LR
-A[User Input] --> B[onChange]
-B --> C[React State]
-C --> D[Validation]
-D --> E[onSubmit]
-E --> F[API / Database]
-```
 
 ## 9. Controlled Components
 
@@ -500,14 +477,6 @@ B → same
 C → same
 ```
 
-```mermaid
-flowchart TD
-A[Previous List] --> C[Compare Keys]
-B[New List] --> C
-C --> D[Same key = existing item]
-C --> E[New key = new item]
-C --> F[Missing key = removed item]
-```
 
 ## 19. Best Key
 
@@ -624,7 +593,7 @@ If the component needs the ID, pass it:
 <UserCard key={user.id} id={user.id} />
 ```
 
-```mermaid
+```...
 flowchart LR
 A[Parent map()] --> B[key]
 A --> C[Normal props]
