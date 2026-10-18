@@ -13,7 +13,7 @@ This module teaches three essential React concepts:
 ---
 
 <p align="center">
-  <img src="img/reactlist.png" alt="React Flow" width="700">
+  <img src="img/React Lists, Forms, and Keys Infographic.png" alt="React Flow" width="700">
 </p>
 
 # Part 1 — React Lists
