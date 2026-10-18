@@ -10,20 +10,6 @@ This module teaches three essential React concepts:
 2. **React Forms** — collect and manage user input with state
 3. **React Keys** — give list items stable identity
 
-```mermaid
-flowchart LR
-A[API / Data] --> B[Array]
-B --> C[map()]
-C --> D[JSX]
-D --> E[Keys]
-E --> F[React UI]
-G[User Input] --> H[onChange]
-H --> I[State]
-I --> J[Validation]
-J --> K[onSubmit]
-K --> L[API]
-```
-
 ---
 
 # Part 1 — React Lists
