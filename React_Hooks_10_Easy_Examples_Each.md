@@ -59,6 +59,52 @@ function Counter() {
 export default Counter;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Counter** is explained below. Read the code
+first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function Counter() {` --- Declares a function or React component.
+3.  `const [count, setCount] = useState(0);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `return (` --- Begins the JSX returned by the component.
+5.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+6.  `<h2>{count}</h2>` --- Creates a JSX element that React will render
+    into the UI.
+7.  `<button onClick={() => setCount(count + 1)}>` --- Connects a
+    function to the click event of the JSX element.
+8.  `+` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+9.  `</button>` --- Creates a JSX element that React will render into
+    the UI.
+10. `<button onClick={() => setCount(count - 1)}>` --- Connects a
+    function to the click event of the JSX element.
+11. `-` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+12. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+13. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+14. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+15. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+16. `export default Counter;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 **What happens?**
 
 -   `count` stores the current number.
@@ -89,6 +135,46 @@ function Name() {
 export default Name;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Change Name** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function Name() {` --- Declares a function or React component.
+3.  `const [name, setName] = useState("Sahil");` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `return (` --- Begins the JSX returned by the component.
+5.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+6.  `<h2>Hello {name}</h2>` --- Creates a JSX element that React will
+    render into the UI.
+7.  `<button onClick={() => setName("Rahul")}>` --- Connects a function
+    to the click event of the JSX element.
+8.  `Change Name` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+9.  `</button>` --- Creates a JSX element that React will render into
+    the UI.
+10. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+11. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+12. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+13. `export default Name;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 3 --- Show / Hide Text
@@ -113,6 +199,46 @@ function ShowHide() {
 export default ShowHide;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Show / Hide Text** is explained below. Read
+the code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function ShowHide() {` --- Declares a function or React component.
+3.  `const [show, setShow] = useState(true);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `return (` --- Begins the JSX returned by the component.
+5.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+6.  `<button onClick={() => setShow(!show)}>` --- Connects a function to
+    the click event of the JSX element.
+7.  `Show / Hide` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+8.  `</button>` --- Creates a JSX element that React will render into
+    the UI.
+9.  `{show && <p>This text is visible.</p>}` --- Conditionally renders
+    the expression on the right when the left side is truthy.
+10. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+11. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+12. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+13. `export default ShowHide;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 4 --- Dark Mode Toggle
@@ -136,6 +262,47 @@ function Theme() {
 
 export default Theme;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Dark Mode Toggle** is explained below. Read
+the code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function Theme() {` --- Declares a function or React component.
+3.  `const [dark, setDark] = useState(false);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `return (` --- Begins the JSX returned by the component.
+5.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+6.  `<button onClick={() => setDark(!dark)}>` --- Connects a function to
+    the click event of the JSX element.
+7.  `Toggle Theme` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+8.  `</button>` --- Creates a JSX element that React will render into
+    the UI.
+9.  `<h2>{dark ? "Dark Mode" : "Light Mode"}</h2>` --- Uses a
+    conditional expression to choose between two possible values/UI
+    branches.
+10. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+11. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+12. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+13. `export default Theme;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -163,6 +330,50 @@ function InputExample() {
 export default InputExample;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Input Field** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function InputExample() {` --- Declares a function or React
+    component.
+3.  `const [name, setName] = useState("");` --- Creates state: the first
+    value is the current state and the second value updates it.
+4.  `return (` --- Begins the JSX returned by the component.
+5.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+6.  `<input` --- Creates a JSX element that React will render into the
+    UI.
+7.  `value={name}` --- Makes an input controlled by React state.
+8.  `onChange={(e) => setName(e.target.value)}` --- Runs when an input
+    changes, commonly updating React state.
+9.  `placeholder="Enter your name"` --- Supports the surrounding React
+    logic, data flow, or rendered UI.
+10. `/>` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+11. `<h2>You entered: {name}</h2>` --- Creates a JSX element that React
+    will render into the UI.
+12. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+13. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+14. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+15. `export default InputExample;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 6 --- Like Button
@@ -182,6 +393,41 @@ function LikeButton() {
 
 export default LikeButton;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Like Button** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function LikeButton() {` --- Declares a function or React
+    component.
+3.  `const [liked, setLiked] = useState(false);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `return (` --- Begins the JSX returned by the component.
+5.  `<button onClick={() => setLiked(!liked)}>` --- Connects a function
+    to the click event of the JSX element.
+6.  `{liked ? "❤️ Liked" : "♡ Like"}` --- Uses a conditional expression
+    to choose between two possible values/UI branches.
+7.  `</button>` --- Creates a JSX element that React will render into
+    the UI.
+8.  `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+9.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+10. `export default LikeButton;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -210,6 +456,53 @@ function ResetCounter() {
 
 export default ResetCounter;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Reset Counter** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function ResetCounter() {` --- Declares a function or React
+    component.
+3.  `const [count, setCount] = useState(0);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `return (` --- Begins the JSX returned by the component.
+5.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+6.  `<h2>{count}</h2>` --- Creates a JSX element that React will render
+    into the UI.
+7.  `<button onClick={() => setCount(count + 1)}>` --- Connects a
+    function to the click event of the JSX element.
+8.  `Add` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+9.  `</button>` --- Creates a JSX element that React will render into
+    the UI.
+10. `<button onClick={() => setCount(0)}>` --- Connects a function to
+    the click event of the JSX element.
+11. `Reset` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+12. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+13. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+14. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+15. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+16. `export default ResetCounter;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -246,6 +539,68 @@ function User() {
 export default User;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Object State** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function User() {` --- Declares a function or React component.
+3.  `const [user, setUser] = useState({` --- Creates state: the first
+    value is the current state and the second value updates it.
+4.  `name: "Sahil",` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+5.  `age: 22` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+6.  `});` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+7.  `return (` --- Begins the JSX returned by the component.
+8.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+9.  `<h2>{user.name}</h2>` --- Creates a JSX element that React will
+    render into the UI.
+10. `<p>Age: {user.age}</p>` --- Creates a JSX element that React will
+    render into the UI.
+11. `<button` --- Creates a JSX element that React will render into the
+    UI.
+12. `onClick={() =>` --- Connects a function to the click event of the
+    JSX element.
+13. `setUser({` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+14. `...user,` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+15. `age: user.age + 1` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+16. `})` --- Closes the current function, callback, conditional, or JSX
+    block.
+17. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+18. `>` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+19. `Increase Age` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+20. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+21. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+22. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+23. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+24. `export default User;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 **Important:** When updating an object, keep the other properties using
 the spread operator.
 
@@ -279,6 +634,57 @@ function Skills() {
 export default Skills;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Array State** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function Skills() {` --- Declares a function or React component.
+3.  `const [skills, setSkills] = useState(["HTML", "CSS"]);` --- Creates
+    state: the first value is the current state and the second value
+    updates it.
+4.  `const addSkill = () => {` --- Declares a local variable whose value
+    is used by the component logic.
+5.  `setSkills([...skills, "React"]);` --- Supports the surrounding
+    React logic, data flow, or rendered UI.
+6.  `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+7.  `return (` --- Begins the JSX returned by the component.
+8.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+9.  `{skills.map((skill) => (` --- Loops through an array and creates
+    one output value/JSX element per item.
+10. `<p key={skill}>{skill}</p>` --- Creates a JSX element that React
+    will render into the UI.
+11. `))}` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+12. `<button onClick={addSkill}>` --- Connects a function to the click
+    event of the JSX element.
+13. `Add React` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+14. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+15. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+16. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+17. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+18. `export default Skills;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 10 --- Functional State Update
@@ -305,6 +711,48 @@ function Counter() {
 
 export default Counter;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Functional State Update** is explained below.
+Read the code first, then trace these lines in order.
+
+1.  `import { useState } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function Counter() {` --- Declares a function or React component.
+3.  `const [count, setCount] = useState(0);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `const increase = () => {` --- Declares a local variable whose value
+    is used by the component logic.
+5.  `setCount((previous) => previous + 1);` --- Supports the surrounding
+    React logic, data flow, or rendered UI.
+6.  `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+7.  `return (` --- Begins the JSX returned by the component.
+8.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+9.  `<h2>{count}</h2>` --- Creates a JSX element that React will render
+    into the UI.
+10. `<button onClick={increase}>Add</button>` --- Connects a function to
+    the click event of the JSX element.
+11. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+12. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+13. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+14. `export default Counter;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -347,6 +795,37 @@ function App() {
 export default App;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Change Document Title** is explained below.
+Read the code first, then trace these lines in order.
+
+1.  `import { useEffect } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function App() {` --- Declares a function or React component.
+3.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+4.  `document.title = "React App";` --- Supports the surrounding React
+    logic, data flow, or rendered UI.
+5.  `}, []);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+6.  `return <h2>Hello React</h2>;` --- Returns a value from the current
+    function or component.
+7.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+8.  `export default App;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 2 --- Run Only Once
@@ -366,6 +845,37 @@ function App() {
 
 export default App;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Run Only Once** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useEffect } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function App() {` --- Declares a function or React component.
+3.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+4.  `console.log("Component loaded");` --- Prints information to the
+    browser console for learning or debugging.
+5.  `}, []);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+6.  `return <h2>Home Page</h2>;` --- Returns a value from the current
+    function or component.
+7.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+8.  `export default App;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -396,6 +906,53 @@ function App() {
 export default App;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Run When Name Changes** is explained below.
+Read the code first, then trace these lines in order.
+
+1.  `import { useEffect, useState } from "react";` --- Imports the React
+    API or Hook needed by this example.
+2.  `function App() {` --- Declares a function or React component.
+3.  `const [name, setName] = useState("");` --- Creates state: the first
+    value is the current state and the second value updates it.
+4.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+5.  `console.log("Name changed:", name);` --- Prints information to the
+    browser console for learning or debugging.
+6.  `}, [name]);` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+7.  `return (` --- Begins the JSX returned by the component.
+8.  `<div>` --- Creates a JSX element that React will render into the
+    UI.
+9.  `<input` --- Creates a JSX element that React will render into the
+    UI.
+10. `value={name}` --- Makes an input controlled by React state.
+11. `onChange={(e) => setName(e.target.value)}` --- Runs when an input
+    changes, commonly updating React state.
+12. `/>` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+13. `<p>{name}</p>` --- Creates a JSX element that React will render
+    into the UI.
+14. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+15. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+16. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+17. `export default App;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 4 --- Timer
@@ -419,6 +976,45 @@ function Timer() {
 
 export default Timer;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Timer** is explained below. Read the code
+first, then trace these lines in order.
+
+1.  `import { useEffect, useState } from "react";` --- Imports the React
+    API or Hook needed by this example.
+2.  `function Timer() {` --- Declares a function or React component.
+3.  `const [seconds, setSeconds] = useState(0);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+5.  `const timer = setInterval(() => {` --- Creates a repeating browser
+    timer.
+6.  `setSeconds((previous) => previous + 1);` --- Supports the
+    surrounding React logic, data flow, or rendered UI.
+7.  `}, 1000);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+8.  `return () => clearInterval(timer);` --- Stops the interval during
+    cleanup.
+9.  `}, []);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+10. `return <h2>{seconds} seconds</h2>;` --- Returns a value from the
+    current function or component.
+11. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+12. `export default Timer;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 **Why cleanup?**
 
@@ -452,6 +1048,54 @@ function ScreenSize() {
 export default ScreenSize;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Window Resize** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useEffect, useState } from "react";` --- Imports the React
+    API or Hook needed by this example.
+2.  `function ScreenSize() {` --- Declares a function or React
+    component.
+3.  `const [width, setWidth] = useState(window.innerWidth);` --- Creates
+    state: the first value is the current state and the second value
+    updates it.
+4.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+5.  `const handleResize = () => {` --- Declares a local variable whose
+    value is used by the component logic.
+6.  `setWidth(window.innerWidth);` --- Supports the surrounding React
+    logic, data flow, or rendered UI.
+7.  `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+8.  `window.addEventListener("resize", handleResize);` --- Registers a
+    browser event listener so the component can react to an external
+    event.
+9.  `return () => {` --- Begins the JSX returned by the component.
+10. `window.removeEventListener("resize", handleResize);` --- Removes
+    the browser listener during cleanup so stale listeners do not remain
+    active.
+11. `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+12. `}, []);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+13. `return <h2>Width: {width}px</h2>;` --- Returns a value from the
+    current function or component.
+14. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+15. `export default ScreenSize;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 6 --- Fetch API Data
@@ -480,6 +1124,54 @@ function Users() {
 export default Users;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Fetch API Data** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useEffect, useState } from "react";` --- Imports the React
+    API or Hook needed by this example.
+2.  `function Users() {` --- Declares a function or React component.
+3.  `const [users, setUsers] = useState([]);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+5.  `fetch("https://jsonplaceholder.typicode.com/users")` --- Starts an
+    HTTP request to retrieve data.
+6.  `.then((response) => response.json())` --- Supports the surrounding
+    React logic, data flow, or rendered UI.
+7.  `.then((data) => setUsers(data));` --- Supports the surrounding
+    React logic, data flow, or rendered UI.
+8.  `}, []);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+9.  `return (` --- Begins the JSX returned by the component.
+10. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+11. `{users.map((user) => (` --- Loops through an array and creates one
+    output value/JSX element per item.
+12. `<p key={user.id}>{user.name}</p>` --- Creates a JSX element that
+    React will render into the UI.
+13. `))}` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+14. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+15. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+16. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+17. `export default Users;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 7 --- Event Listener Cleanup
@@ -505,6 +1197,50 @@ function Keyboard() {
 
 export default Keyboard;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Event Listener Cleanup** is explained below.
+Read the code first, then trace these lines in order.
+
+1.  `import { useEffect } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function Keyboard() {` --- Declares a function or React component.
+3.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+4.  `const handleKey = (event) => {` --- Declares a local variable whose
+    value is used by the component logic.
+5.  `console.log("Pressed:", event.key);` --- Prints information to the
+    browser console for learning or debugging.
+6.  `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+7.  `window.addEventListener("keydown", handleKey);` --- Registers a
+    browser event listener so the component can react to an external
+    event.
+8.  `return () => {` --- Begins the JSX returned by the component.
+9.  `window.removeEventListener("keydown", handleKey);` --- Removes the
+    browser listener during cleanup so stale listeners do not remain
+    active.
+10. `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+11. `}, []);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+12. `return <h2>Press any key</h2>;` --- Returns a value from the
+    current function or component.
+13. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+14. `export default Keyboard;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -532,6 +1268,49 @@ function App() {
 export default App;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Local Storage** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useEffect, useState } from "react";` --- Imports the React
+    API or Hook needed by this example.
+2.  `function App() {` --- Declares a function or React component.
+3.  `const [name, setName] = useState("");` --- Creates state: the first
+    value is the current state and the second value updates it.
+4.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+5.  `localStorage.setItem("name", name);` --- Reads or writes browser
+    storage so data can survive a refresh.
+6.  `}, [name]);` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+7.  `return (` --- Begins the JSX returned by the component.
+8.  `<input` --- Creates a JSX element that React will render into the
+    UI.
+9.  `value={name}` --- Makes an input controlled by React state.
+10. `onChange={(e) => setName(e.target.value)}` --- Runs when an input
+    changes, commonly updating React state.
+11. `placeholder="Enter name"` --- Supports the surrounding React logic,
+    data flow, or rendered UI.
+12. `/>` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+13. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+14. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+15. `export default App;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 9 --- Fetch Data When ID Changes
@@ -558,6 +1337,51 @@ function User({ id }) {
 export default User;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Fetch Data When ID Changes** is explained
+below. Read the code first, then trace these lines in order.
+
+1.  `import { useEffect, useState } from "react";` --- Imports the React
+    API or Hook needed by this example.
+2.  `function User({ id }) {` --- Declares a function or React
+    component.
+3.  `const [user, setUser] = useState(null);` --- Creates state: the
+    first value is the current state and the second value updates it.
+4.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+5.  `fetch(\`https://jsonplaceholder.typicode.com/users/\${id}\`)\` ---
+    Starts an HTTP request to retrieve data.
+6.  `.then((response) => response.json())` --- Supports the surrounding
+    React logic, data flow, or rendered UI.
+7.  `.then((data) => setUser(data));` --- Supports the surrounding React
+    logic, data flow, or rendered UI.
+8.  `}, [id]);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+9.  `return (` --- Begins the JSX returned by the component.
+10. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+11. `<h2>{user?.name}</h2>` --- Uses a conditional expression to choose
+    between two possible values/UI branches.
+12. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+13. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+14. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+15. `export default User;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 10 --- Cleanup Timer
@@ -579,6 +1403,43 @@ function App() {
 
 export default App;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Cleanup Timer** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useEffect } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function App() {` --- Declares a function or React component.
+3.  `useEffect(() => {` --- Starts a side effect that React runs after
+    the component commits, according to its dependencies.
+4.  `const timer = setTimeout(() => {` --- Creates a browser timer that
+    runs once after the delay.
+5.  `console.log("Hello after 2 seconds");` --- Prints information to
+    the browser console for learning or debugging.
+6.  `}, 2000);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+7.  `return () => clearTimeout(timer);` --- Stops the timeout during
+    cleanup.
+8.  `}, []);` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+9.  `return <h2>Timer Example</h2>;` --- Returns a value from the
+    current function or component.
+10. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+11. `export default App;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -633,6 +1494,58 @@ function Counter() {
 export default Counter;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Basic Counter** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useReducer } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function reducer(state, action) {` --- Declares a function or React
+    component.
+3.  `if (action.type === "increment") {` --- Checks a condition and runs
+    the block only when the condition is true.
+4.  `return state + 1;` --- Returns a value from the current function or
+    component.
+5.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+6.  `return state;` --- Returns a value from the current function or
+    component.
+7.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+8.  `function Counter() {` --- Declares a function or React component.
+9.  `const [count, dispatch] = useReducer(reducer, 0);` --- Connects the
+    component to a reducer and provides the current state plus dispatch.
+10. `return (` --- Begins the JSX returned by the component.
+11. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+12. `<h2>{count}</h2>` --- Creates a JSX element that React will render
+    into the UI.
+13. `<button onClick={() => dispatch({ type: "increment" })}>` --- Sends
+    an action to the reducer, which decides the next state.
+14. `Add` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+15. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+16. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+17. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+18. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+19. `export default Counter;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 2 --- Increment and Decrement
@@ -673,6 +1586,72 @@ function Counter() {
 
 export default Counter;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Increment and Decrement** is explained below.
+Read the code first, then trace these lines in order.
+
+1.  `import { useReducer } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function reducer(state, action) {` --- Declares a function or React
+    component.
+3.  `switch (action.type) {` --- Starts action-based branching so
+    different actions can produce different state transitions.
+4.  `case "increment":` --- Handles one specific action type in the
+    reducer.
+5.  `return state + 1;` --- Returns a value from the current function or
+    component.
+6.  `case "decrement":` --- Handles one specific action type in the
+    reducer.
+7.  `return state - 1;` --- Returns a value from the current function or
+    component.
+8.  `default:` --- Defines the fallback behavior when no other case
+    matches.
+9.  `return state;` --- Returns a value from the current function or
+    component.
+10. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+11. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+12. `function Counter() {` --- Declares a function or React component.
+13. `const [count, dispatch] = useReducer(reducer, 0);` --- Connects the
+    component to a reducer and provides the current state plus dispatch.
+14. `return (` --- Begins the JSX returned by the component.
+15. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+16. `<h2>{count}</h2>` --- Creates a JSX element that React will render
+    into the UI.
+17. `<button onClick={() => dispatch({ type: "increment" })}>` --- Sends
+    an action to the reducer, which decides the next state.
+18. `+` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+19. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+20. `<button onClick={() => dispatch({ type: "decrement" })}>` --- Sends
+    an action to the reducer, which decides the next state.
+21. `-` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+22. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+23. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+24. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+25. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+26. `export default Counter;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -715,6 +1694,70 @@ function Counter() {
 export default Counter;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Reset Counter** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useReducer } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function reducer(state, action) {` --- Declares a function or React
+    component.
+3.  `switch (action.type) {` --- Starts action-based branching so
+    different actions can produce different state transitions.
+4.  `case "add":` --- Handles one specific action type in the reducer.
+5.  `return state + 1;` --- Returns a value from the current function or
+    component.
+6.  `case "reset":` --- Handles one specific action type in the reducer.
+7.  `return 0;` --- Returns a value from the current function or
+    component.
+8.  `default:` --- Defines the fallback behavior when no other case
+    matches.
+9.  `return state;` --- Returns a value from the current function or
+    component.
+10. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+11. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+12. `function Counter() {` --- Declares a function or React component.
+13. `const [count, dispatch] = useReducer(reducer, 0);` --- Connects the
+    component to a reducer and provides the current state plus dispatch.
+14. `return (` --- Begins the JSX returned by the component.
+15. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+16. `<h2>{count}</h2>` --- Creates a JSX element that React will render
+    into the UI.
+17. `<button onClick={() => dispatch({ type: "add" })}>` --- Sends an
+    action to the reducer, which decides the next state.
+18. `Add` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+19. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+20. `<button onClick={() => dispatch({ type: "reset" })}>` --- Sends an
+    action to the reducer, which decides the next state.
+21. `Reset` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+22. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+23. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+24. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+25. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+26. `export default Counter;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 4 --- Counter With Step
@@ -756,6 +1799,75 @@ function Counter() {
 export default Counter;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Counter With Step** is explained below. Read
+the code first, then trace these lines in order.
+
+1.  `import { useReducer } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function reducer(state, action) {` --- Declares a function or React
+    component.
+3.  `switch (action.type) {` --- Starts action-based branching so
+    different actions can produce different state transitions.
+4.  `case "add":` --- Handles one specific action type in the reducer.
+5.  `return state + action.amount;` --- Returns a value from the current
+    function or component.
+6.  `default:` --- Defines the fallback behavior when no other case
+    matches.
+7.  `return state;` --- Returns a value from the current function or
+    component.
+8.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+9.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+10. `function Counter() {` --- Declares a function or React component.
+11. `const [count, dispatch] = useReducer(reducer, 0);` --- Connects the
+    component to a reducer and provides the current state plus dispatch.
+12. `return (` --- Begins the JSX returned by the component.
+13. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+14. `<h2>{count}</h2>` --- Creates a JSX element that React will render
+    into the UI.
+15. `<button` --- Creates a JSX element that React will render into the
+    UI.
+16. `onClick={() =>` --- Connects a function to the click event of the
+    JSX element.
+17. `dispatch({` --- Sends an action to the reducer, which decides the
+    next state.
+18. `type: "add",` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+19. `amount: 5` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+20. `})` --- Closes the current function, callback, conditional, or JSX
+    block.
+21. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+22. `>` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+23. `Add 5` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+24. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+25. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+26. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+27. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+28. `export default Counter;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 5 --- Boolean State
@@ -783,6 +1895,53 @@ function Toggle() {
 
 export default Toggle;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Boolean State** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useReducer } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function reducer(state, action) {` --- Declares a function or React
+    component.
+3.  `if (action.type === "toggle") {` --- Checks a condition and runs
+    the block only when the condition is true.
+4.  `return !state;` --- Returns a value from the current function or
+    component.
+5.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+6.  `return state;` --- Returns a value from the current function or
+    component.
+7.  `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+8.  `function Toggle() {` --- Declares a function or React component.
+9.  `const [on, dispatch] = useReducer(reducer, false);` --- Connects
+    the component to a reducer and provides the current state plus
+    dispatch.
+10. `return (` --- Begins the JSX returned by the component.
+11. `<button onClick={() => dispatch({ type: "toggle" })}>` --- Sends an
+    action to the reducer, which decides the next state.
+12. `{on ? "ON" : "OFF"}` --- Uses a conditional expression to choose
+    between two possible values/UI branches.
+13. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+14. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+15. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+16. `export default Toggle;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -843,6 +2002,109 @@ function User() {
 
 export default User;
 ```
+
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Object State** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useReducer } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `const initialState = {` --- Declares a local variable whose value
+    is used by the component logic.
+3.  `name: "Sahil",` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+4.  `age: 22` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+5.  `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+6.  `function reducer(state, action) {` --- Declares a function or React
+    component.
+7.  `switch (action.type) {` --- Starts action-based branching so
+    different actions can produce different state transitions.
+8.  `case "changeName":` --- Handles one specific action type in the
+    reducer.
+9.  `return {` --- Returns a value from the current function or
+    component.
+10. `...state,` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+11. `name: action.value` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+12. `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+13. `case "increaseAge":` --- Handles one specific action type in the
+    reducer.
+14. `return {` --- Returns a value from the current function or
+    component.
+15. `...state,` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+16. `age: state.age + 1` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+17. `};` --- Closes the current function, callback, conditional, or JSX
+    block.
+18. `default:` --- Defines the fallback behavior when no other case
+    matches.
+19. `return state;` --- Returns a value from the current function or
+    component.
+20. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+21. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+22. `function User() {` --- Declares a function or React component.
+23. `const [user, dispatch] = useReducer(reducer, initialState);` ---
+    Connects the component to a reducer and provides the current state
+    plus dispatch.
+24. `return (` --- Begins the JSX returned by the component.
+25. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+26. `<h2>{user.name}</h2>` --- Creates a JSX element that React will
+    render into the UI.
+27. `<p>{user.age}</p>` --- Creates a JSX element that React will render
+    into the UI.
+28. `<button` --- Creates a JSX element that React will render into the
+    UI.
+29. `onClick={() =>` --- Connects a function to the click event of the
+    JSX element.
+30. `dispatch({` --- Sends an action to the reducer, which decides the
+    next state.
+31. `type: "changeName",` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+32. `value: "Rahul"` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+33. `})` --- Closes the current function, callback, conditional, or JSX
+    block.
+34. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+35. `>` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+36. `Change Name` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+37. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+38. `<button onClick={() => dispatch({ type: "increaseAge" })}>` ---
+    Sends an action to the reducer, which decides the next state.
+39. `Increase Age` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+40. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+41. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+42. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+43. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+44. `export default User;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
 
 ------------------------------------------------------------------------
 
@@ -909,6 +2171,119 @@ function Todo() {
 export default Todo;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Todo List** is explained below. Read the code
+first, then trace these lines in order.
+
+1.  `import { useReducer } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function reducer(state, action) {` --- Declares a function or React
+    component.
+3.  `switch (action.type) {` --- Starts action-based branching so
+    different actions can produce different state transitions.
+4.  `case "add":` --- Handles one specific action type in the reducer.
+5.  `return [` --- Returns a value from the current function or
+    component.
+6.  `...state,` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+7.  `{` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+8.  `id: Date.now(),` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+9.  `text: action.text` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+10. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+11. `];` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+12. `case "remove":` --- Handles one specific action type in the
+    reducer.
+13. `return state.filter((todo) => todo.id !== action.id);` --- Creates
+    a new array containing only items that pass the condition.
+14. `default:` --- Defines the fallback behavior when no other case
+    matches.
+15. `return state;` --- Returns a value from the current function or
+    component.
+16. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+17. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+18. `function Todo() {` --- Declares a function or React component.
+19. `const [todos, dispatch] = useReducer(reducer, []);` --- Connects
+    the component to a reducer and provides the current state plus
+    dispatch.
+20. `return (` --- Begins the JSX returned by the component.
+21. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+22. `<button` --- Creates a JSX element that React will render into the
+    UI.
+23. `onClick={() =>` --- Connects a function to the click event of the
+    JSX element.
+24. `dispatch({` --- Sends an action to the reducer, which decides the
+    next state.
+25. `type: "add",` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+26. `text: "Learn React"` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+27. `})` --- Closes the current function, callback, conditional, or JSX
+    block.
+28. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+29. `>` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+30. `Add Todo` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+31. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+32. `{todos.map((todo) => (` --- Loops through an array and creates one
+    output value/JSX element per item.
+33. `<p key={todo.id}>` --- Creates a JSX element that React will render
+    into the UI.
+34. `{todo.text}` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+35. `<button` --- Creates a JSX element that React will render into the
+    UI.
+36. `onClick={() =>` --- Connects a function to the click event of the
+    JSX element.
+37. `dispatch({` --- Sends an action to the reducer, which decides the
+    next state.
+38. `type: "remove",` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+39. `id: todo.id` --- Supports the surrounding React logic, data flow,
+    or rendered UI.
+40. `})` --- Closes the current function, callback, conditional, or JSX
+    block.
+41. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+42. `>` --- Supports the surrounding React logic, data flow, or rendered
+    UI.
+43. `Delete` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+44. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+45. `</p>` --- Creates a JSX element that React will render into the UI.
+46. `))}` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+47. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+48. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+49. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+50. `export default Todo;` --- Exports this component or Hook so another
+    file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 8 --- Login State
@@ -954,6 +2329,79 @@ function Login() {
 export default Login;
 ```
 
+### 🔎 Deep Line-by-Line Explanation
+
+Every meaningful line in **Login State** is explained below. Read the
+code first, then trace these lines in order.
+
+1.  `import { useReducer } from "react";` --- Imports the React API or
+    Hook needed by this example.
+2.  `function reducer(state, action) {` --- Declares a function or React
+    component.
+3.  `switch (action.type) {` --- Starts action-based branching so
+    different actions can produce different state transitions.
+4.  `case "login":` --- Handles one specific action type in the reducer.
+5.  `return { loggedIn: true };` --- Returns a value from the current
+    function or component.
+6.  `case "logout":` --- Handles one specific action type in the
+    reducer.
+7.  `return { loggedIn: false };` --- Returns a value from the current
+    function or component.
+8.  `default:` --- Defines the fallback behavior when no other case
+    matches.
+9.  `return state;` --- Returns a value from the current function or
+    component.
+10. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+11. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+12. `function Login() {` --- Declares a function or React component.
+13. `const [state, dispatch] = useReducer(reducer, {` --- Connects the
+    component to a reducer and provides the current state plus dispatch.
+14. `loggedIn: false` --- Supports the surrounding React logic, data
+    flow, or rendered UI.
+15. `});` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+16. `return (` --- Begins the JSX returned by the component.
+17. `<div>` --- Creates a JSX element that React will render into the
+    UI.
+18. `<h2>` --- Creates a JSX element that React will render into the UI.
+19. `{state.loggedIn ? "Welcome User" : "Please Login"}` --- Uses a
+    conditional expression to choose between two possible values/UI
+    branches.
+20. `</h2>` --- Creates a JSX element that React will render into the
+    UI.
+21. `<button onClick={() => dispatch({ type: "login" })}>` --- Sends an
+    action to the reducer, which decides the next state.
+22. `Login` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+23. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+24. `<button onClick={() => dispatch({ type: "logout" })}>` --- Sends an
+    action to the reducer, which decides the next state.
+25. `Logout` --- Supports the surrounding React logic, data flow, or
+    rendered UI.
+26. `</button>` --- Creates a JSX element that React will render into
+    the UI.
+27. `</div>` --- Creates a JSX element that React will render into the
+    UI.
+28. `);` --- Closes the current function, callback, conditional, or JSX
+    block.
+29. `}` --- Closes the current function, callback, conditional, or JSX
+    block.
+30. `export default Login;` --- Exports this component or Hook so
+    another file can import it.
+
+### 🔄 Execution Flow
+
+1.  React executes the component function.
+2.  Hooks read/create the required state, context, ref, memoized value,
+    or effect.
+3.  JSX describes the UI.
+4.  A user action or external event may trigger an update.
+5.  React renders again when relevant state/context changes; dependency
+    arrays control when effects and memoized work run again.
+
 ------------------------------------------------------------------------
 
 ## Example 9 --- Form State
@@ -998,2427 +2446,196 @@ function Form() {
             value: e.target.value
           })
         }
-      />
 
-      <p>{form.name}</p>
-      <p>{form.email}</p>
-    </div>
-  );
-}
+---
 
-export default Form;
+# 12. Common Mistakes Students Make
+
+## Mistake 1 — Mutating state directly
+
+Wrong:
+```jsx
+user.name = "Rahul";
 ```
 
-------------------------------------------------------------------------
-
-## Example 10 --- Shopping Cart
+Better:
 
 ``` jsx
-import { useReducer } from "react";
-
-function reducer(state, action) {
-  switch (action.type) {
-    case "add":
-      return [
-        ...state,
-        action.product
-      ];
-
-    case "remove":
-      return state.filter(
-        (item) => item.id !== action.id
-      );
-
-    default:
-      return state;
-  }
-}
-
-function Cart() {
-  const [cart, dispatch] = useReducer(reducer, []);
-
-  const product = {
-    id: 1,
-    name: "Laptop",
-    price: 50000
-  };
-
-  return (
-    <div>
-      <button
-        onClick={() =>
-          dispatch({
-            type: "add",
-            product
-          })
-        }
-      >
-        Add Laptop
-      </button>
-
-      <h3>Cart Items: {cart.length}</h3>
-
-      {cart.map((item) => (
-        <p key={item.id}>
-          {item.name}
-          <button
-            onClick={() =>
-              dispatch({
-                type: "remove",
-                id: item.id
-              })
-            }
-          >
-            Remove
-          </button>
-        </p>
-      ))}
-    </div>
-  );
-}
-
-export default Cart;
+setUser({ ...user, name: "Rahul" });
 ```
 
-------------------------------------------------------------------------
+React state should be treated as immutable data.
 
-# 4. `useContext`
+## Mistake 2 --- Wrong effect dependencies
 
-`useContext` allows components to access shared data without passing
-props through every component.
+If an effect uses a reactive value such as `name`, think carefully about
+whether `name` belongs in the dependency list.
 
-Common uses:
+## Mistake 3 --- Forgetting cleanup
 
--   Theme
--   User
--   Authentication
--   Language
--   Cart
--   App settings
+Timers, subscriptions, and browser event listeners can continue after a
+component disappears. Return a cleanup function when the external system
+requires it.
 
-------------------------------------------------------------------------
+## Mistake 4 --- Using `useMemo` for every calculation
 
-## Example 1 --- Simple Theme
+`useMemo` is a performance optimization. A tiny calculation is often
+clearer as normal JavaScript.
 
-``` jsx
-import { createContext, useContext } from "react";
+## Mistake 5 --- Using `useCallback` everywhere
 
-const ThemeContext = createContext();
+Use it when stable function identity is useful, especially with memoized
+child components or Hook dependencies.
 
-function Child() {
-  const theme = useContext(ThemeContext);
-
-  return <h2>Theme: {theme}</h2>;
-}
-
-function App() {
-  return (
-    <ThemeContext.Provider value="dark">
-      <Child />
-    </ThemeContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 2 --- User Name
-
-``` jsx
-import { createContext, useContext } from "react";
-
-const UserContext = createContext();
-
-function Profile() {
-  const name = useContext(UserContext);
-
-  return <h2>Hello {name}</h2>;
-}
-
-function App() {
-  return (
-    <UserContext.Provider value="Sahil">
-      <Profile />
-    </UserContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 3 --- Language
-
-``` jsx
-import { createContext, useContext } from "react";
-
-const LanguageContext = createContext();
-
-function Message() {
-  const language = useContext(LanguageContext);
-
-  return <h2>Language: {language}</h2>;
-}
-
-function App() {
-  return (
-    <LanguageContext.Provider value="English">
-      <Message />
-    </LanguageContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 4 --- Theme Object
-
-``` jsx
-import { createContext, useContext } from "react";
-
-const ThemeContext = createContext();
-
-function Button() {
-  const theme = useContext(ThemeContext);
-
-  return (
-    <button>
-      {theme.buttonText}
-    </button>
-  );
-}
-
-function App() {
-  const theme = {
-    buttonText: "Click Me",
-    mode: "dark"
-  };
-
-  return (
-    <ThemeContext.Provider value={theme}>
-      <Button />
-    </ThemeContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 5 --- Authentication
-
-``` jsx
-import { createContext, useContext } from "react";
-
-const AuthContext = createContext();
-
-function Dashboard() {
-  const user = useContext(AuthContext);
-
-  return <h2>Welcome {user.name}</h2>;
-}
-
-function App() {
-  const user = {
-    name: "Sahil",
-    loggedIn: true
-  };
-
-  return (
-    <AuthContext.Provider value={user}>
-      <Dashboard />
-    </AuthContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 6 --- Cart Count
-
-``` jsx
-import { createContext, useContext } from "react";
-
-const CartContext = createContext();
-
-function CartIcon() {
-  const cartCount = useContext(CartContext);
-
-  return <h2>Cart: {cartCount}</h2>;
-}
-
-function App() {
-  return (
-    <CartContext.Provider value={3}>
-      <CartIcon />
-    </CartContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 7 --- App Settings
-
-``` jsx
-import { createContext, useContext } from "react";
-
-const SettingsContext = createContext();
-
-function Settings() {
-  const settings = useContext(SettingsContext);
-
-  return (
-    <div>
-      <p>Language: {settings.language}</p>
-      <p>Theme: {settings.theme}</p>
-    </div>
-  );
-}
-
-function App() {
-  const settings = {
-    language: "English",
-    theme: "dark"
-  };
-
-  return (
-    <SettingsContext.Provider value={settings}>
-      <Settings />
-    </SettingsContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 8 --- Multiple Context Values
-
-``` jsx
-import { createContext, useContext } from "react";
-
-const UserContext = createContext();
-const ThemeContext = createContext();
-
-function Profile() {
-  const user = useContext(UserContext);
-  const theme = useContext(ThemeContext);
-
-  return (
-    <div>
-      <h2>{user}</h2>
-      <p>{theme}</p>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <UserContext.Provider value="Sahil">
-      <ThemeContext.Provider value="dark">
-        <Profile />
-      </ThemeContext.Provider>
-    </UserContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 9 --- Context + State
-
-``` jsx
-import {
-  createContext,
-  useContext,
-  useState
-} from "react";
-
-const ThemeContext = createContext();
-
-function Button() {
-  const { dark, setDark } = useContext(ThemeContext);
-
-  return (
-    <button onClick={() => setDark(!dark)}>
-      {dark ? "Dark" : "Light"}
-    </button>
-  );
-}
-
-function App() {
-  const [dark, setDark] = useState(false);
-
-  return (
-    <ThemeContext.Provider value={{ dark, setDark }}>
-      <Button />
-    </ThemeContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 10 --- Custom Context Hook
-
-``` jsx
-import {
-  createContext,
-  useContext
-} from "react";
-
-const UserContext = createContext();
-
-function useUser() {
-  return useContext(UserContext);
-}
-
-function Profile() {
-  const user = useUser();
-
-  return <h2>{user.name}</h2>;
-}
-
-function App() {
-  const user = {
-    name: "Sahil"
-  };
-
-  return (
-    <UserContext.Provider value={user}>
-      <Profile />
-    </UserContext.Provider>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-# 5. `useLayoutEffect`
-
-`useLayoutEffect` is similar to `useEffect`, but it runs **after React
-updates the DOM and before the browser paints the screen**.
-
-It is useful when you need to:
-
--   Measure an element
--   Read layout information
--   Adjust scroll position
--   Make a visual adjustment before the user sees the screen
-
-### Basic Syntax
-
-``` jsx
-useLayoutEffect(() => {
-  // read or update layout
-}, []);
-```
-
-> **Important:** Prefer `useEffect` for normal side effects.
-> `useLayoutEffect` can block painting and should be used when the
-> timing actually matters.
-
-------------------------------------------------------------------------
-
-## Example 1 --- Measure Width
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef,
-  useState
-} from "react";
-
-function Box() {
-  const boxRef = useRef(null);
-  const [width, setWidth] = useState(0);
-
-  useLayoutEffect(() => {
-    setWidth(boxRef.current.getBoundingClientRect().width);
-  }, []);
-
-  return (
-    <div>
-      <div ref={boxRef} style={{ width: "300px" }}>
-        Box
-      </div>
-
-      <p>Width: {width}px</p>
-    </div>
-  );
-}
-
-export default Box;
-```
-
-------------------------------------------------------------------------
-
-## Example 2 --- Measure Height
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef,
-  useState
-} from "react";
-
-function Box() {
-  const ref = useRef(null);
-  const [height, setHeight] = useState(0);
-
-  useLayoutEffect(() => {
-    setHeight(ref.current.offsetHeight);
-  }, []);
-
-  return (
-    <div>
-      <div ref={ref}>
-        This is a box with some content.
-      </div>
-
-      <p>Height: {height}px</p>
-    </div>
-  );
-}
-
-export default Box;
-```
-
-------------------------------------------------------------------------
-
-## Example 3 --- Set Scroll Position
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef
-} from "react";
-
-function Chat() {
-  const chatRef = useRef(null);
-
-  useLayoutEffect(() => {
-    chatRef.current.scrollTop =
-      chatRef.current.scrollHeight;
-  }, []);
-
-  return (
-    <div
-      ref={chatRef}
-      style={{
-        height: "100px",
-        overflow: "auto"
-      }}
-    >
-      <p>Hello</p>
-      <p>How are you?</p>
-      <p>I am learning React.</p>
-      <p>React Hooks are useful.</p>
-    </div>
-  );
-}
-
-export default Chat;
-```
-
-------------------------------------------------------------------------
-
-## Example 4 --- Read Bounding Rectangle
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef
-} from "react";
-
-function Box() {
-  const ref = useRef(null);
-
-  useLayoutEffect(() => {
-    const rectangle =
-      ref.current.getBoundingClientRect();
-
-    console.log("Top:", rectangle.top);
-    console.log("Left:", rectangle.left);
-  }, []);
-
-  return <div ref={ref}>Hello</div>;
-}
-
-export default Box;
-```
-
-------------------------------------------------------------------------
-
-## Example 5 --- Focus Input
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef
-} from "react";
-
-function App() {
-  const inputRef = useRef(null);
-
-  useLayoutEffect(() => {
-    inputRef.current.focus();
-  }, []);
-
-  return (
-    <input
-      ref={inputRef}
-      placeholder="Enter your name"
-    />
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 6 --- Calculate Position
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef,
-  useState
-} from "react";
-
-function Box() {
-  const ref = useRef(null);
-  const [top, setTop] = useState(0);
-
-  useLayoutEffect(() => {
-    setTop(ref.current.offsetTop);
-  }, []);
-
-  return (
-    <div>
-      <div ref={ref}>My Box</div>
-      <p>Top position: {top}px</p>
-    </div>
-  );
-}
-
-export default Box;
-```
-
-------------------------------------------------------------------------
-
-## Example 7 --- Read Height After Content Changes
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef,
-  useState
-} from "react";
-
-function Content() {
-  const ref = useRef(null);
-  const [showMore, setShowMore] = useState(false);
-  const [height, setHeight] = useState(0);
-
-  useLayoutEffect(() => {
-    setHeight(ref.current.offsetHeight);
-  }, [showMore]);
-
-  return (
-    <div>
-      <div ref={ref}>
-        <p>Basic content</p>
-
-        {showMore && (
-          <p>
-            Extra content appears here.
-          </p>
-        )}
-      </div>
-
-      <p>Height: {height}px</p>
-
-      <button onClick={() => setShowMore(!showMore)}>
-        Show More
-      </button>
-    </div>
-  );
-}
-
-export default Content;
-```
-
-------------------------------------------------------------------------
-
-## Example 8 --- Scroll Chat Box
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef
-} from "react";
-
-function Chat({ messages }) {
-  const ref = useRef(null);
-
-  useLayoutEffect(() => {
-    ref.current.scrollTop =
-      ref.current.scrollHeight;
-  }, [messages]);
-
-  return (
-    <div
-      ref={ref}
-      style={{
-        height: "150px",
-        overflowY: "auto"
-      }}
-    >
-      {messages.map((message, index) => (
-        <p key={index}>{message}</p>
-      ))}
-    </div>
-  );
-}
-
-export default Chat;
-```
-
-------------------------------------------------------------------------
-
-## Example 9 --- Measure Before Animation
-
-``` jsx
-import {
-  useLayoutEffect,
-  useRef
-} from "react";
-
-function Box() {
-  const ref = useRef(null);
-
-  useLayoutEffect(() => {
-    const width = ref.current.offsetWidth;
-
-    console.log("Starting width:", width);
-
-    ref.current.style.transform =
-      "translateX(50px)";
-  }, []);
-
-  return (
-    <div ref={ref}>
-      Animated Box
-    </div>
-  );
-}
-
-export default Box;
-```
-
-------------------------------------------------------------------------
-
-## Example 10 --- `useLayoutEffect` vs `useEffect`
-
-``` jsx
-import {
-  useEffect,
-  useLayoutEffect
-} from "react";
-
-function App() {
-  useLayoutEffect(() => {
-    console.log("Layout effect");
-  }, []);
-
-  useEffect(() => {
-    console.log("Normal effect");
-  }, []);
-
-  return <h2>Check the console</h2>;
-}
-
-export default App;
-```
-
-**Simple idea:**
+## Mistake 6 --- Confusing `useMemo` and `useCallback`
 
 ``` text
-React updates DOM
-       ↓
-useLayoutEffect
-       ↓
-Browser paints screen
-       ↓
-useEffect
+useMemo     → remembers a calculated VALUE
+useCallback → remembers a FUNCTION reference
 ```
+
+## Mistake 7 --- Using `useLayoutEffect` for normal side effects
+
+Use `useLayoutEffect` when layout timing matters. For normal API calls,
+timers, subscriptions, and similar effects, `useEffect` is generally the
+better choice.
+
+## Mistake 8 --- Treating Context as a complete state-management solution
+
+Context provides values to a component subtree. It can be combined with
+state, reducers, or other architecture depending on application size and
+needs.
 
 ------------------------------------------------------------------------
 
-# 6. `useMemo`
-
-`useMemo` caches a calculated value.
-
-It is mainly useful when a calculation is expensive or when you want to
-avoid repeating a calculation unnecessarily.
-
-### Basic Syntax
-
-``` jsx
-const result = useMemo(() => {
-  return calculation;
-}, [dependencies]);
-```
-
-> Do not use `useMemo` for every small calculation. It is a performance
-> optimization, not a requirement.
-
-------------------------------------------------------------------------
-
-## Example 1 --- Simple Calculation
-
-``` jsx
-import { useMemo } from "react";
-
-function App() {
-  const result = useMemo(() => {
-    return 10 * 20;
-  }, []);
-
-  return <h2>{result}</h2>;
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 2 --- Filter Products
-
-``` jsx
-import { useMemo, useState } from "react";
-
-function Products() {
-  const [search, setSearch] = useState("");
-
-  const products = [
-    "Laptop",
-    "Mouse",
-    "Keyboard",
-    "Monitor"
-  ];
-
-  const filteredProducts = useMemo(() => {
-    return products.filter((product) =>
-      product.toLowerCase().includes(search.toLowerCase())
-    );
-  }, [search]);
-
-  return (
-    <div>
-      <input
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        placeholder="Search"
-      />
-
-      {filteredProducts.map((product) => (
-        <p key={product}>{product}</p>
-      ))}
-    </div>
-  );
-}
-
-export default Products;
-```
-
-------------------------------------------------------------------------
-
-## Example 3 --- Search Filter
-
-``` jsx
-import { useMemo, useState } from "react";
-
-function Search() {
-  const [query, setQuery] = useState("");
-
-  const users = [
-    "Sahil",
-    "Rahul",
-    "Amit",
-    "Priya"
-  ];
-
-  const result = useMemo(() => {
-    return users.filter((user) =>
-      user.toLowerCase().includes(query.toLowerCase())
-    );
-  }, [query]);
-
-  return (
-    <div>
-      <input
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-
-      {result.map((user) => (
-        <p key={user}>{user}</p>
-      ))}
-    </div>
-  );
-}
-
-export default Search;
-```
-
-------------------------------------------------------------------------
-
-## Example 4 --- Expensive Calculation
-
-``` jsx
-import { useMemo, useState } from "react";
-
-function App() {
-  const [number, setNumber] = useState(10);
-  const [dark, setDark] = useState(false);
-
-  const result = useMemo(() => {
-    console.log("Calculating...");
-
-    let total = 0;
-
-    for (let i = 0; i < 1000000; i++) {
-      total += number;
-    }
-
-    return total;
-  }, [number]);
-
-  return (
-    <div>
-      <h2>{result}</h2>
-
-      <button onClick={() => setNumber(number + 1)}>
-        Change Number
-      </button>
-
-      <button onClick={() => setDark(!dark)}>
-        Toggle Theme
-      </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-Changing `dark` does not recalculate `result` because `dark` is not a
-dependency.
-
-------------------------------------------------------------------------
-
-## Example 5 --- Calculate Total Price
-
-``` jsx
-import { useMemo } from "react";
-
-function Cart() {
-  const products = [
-    { name: "Laptop", price: 50000 },
-    { name: "Mouse", price: 1000 },
-    { name: "Keyboard", price: 2000 }
-  ];
-
-  const total = useMemo(() => {
-    return products.reduce(
-      (sum, product) => sum + product.price,
-      0
-    );
-  }, []);
-
-  return <h2>Total: ₹{total}</h2>;
-}
-
-export default Cart;
-```
-
-------------------------------------------------------------------------
-
-## Example 6 --- Calculate Average
-
-``` jsx
-import { useMemo } from "react";
-
-function Marks() {
-  const marks = [80, 75, 90, 85];
-
-  const average = useMemo(() => {
-    const total = marks.reduce(
-      (sum, mark) => sum + mark,
-      0
-    );
-
-    return total / marks.length;
-  }, []);
-
-  return <h2>Average: {average}</h2>;
-}
-
-export default Marks;
-```
-
-------------------------------------------------------------------------
-
-## Example 7 --- Sort Data
-
-``` jsx
-import { useMemo } from "react";
-
-function Students() {
-  const students = [
-    "Rahul",
-    "Amit",
-    "Sahil",
-    "Priya"
-  ];
-
-  const sortedStudents = useMemo(() => {
-    return [...students].sort();
-  }, []);
-
-  return (
-    <div>
-      {sortedStudents.map((student) => (
-        <p key={student}>{student}</p>
-      ))}
-    </div>
-  );
-}
-
-export default Students;
-```
-
-------------------------------------------------------------------------
-
-## Example 8 --- Full Name
-
-``` jsx
-import { useMemo } from "react";
-
-function Profile() {
-  const firstName = "Sahil";
-  const lastName = "Shaikh";
-
-  const fullName = useMemo(() => {
-    return `${firstName} ${lastName}`;
-  }, [firstName, lastName]);
-
-  return <h2>{fullName}</h2>;
-}
-
-export default Profile;
-```
-
-------------------------------------------------------------------------
-
-## Example 9 --- Product Category
-
-``` jsx
-import { useMemo } from "react";
-
-function Product() {
-  const price = 50000;
-
-  const category = useMemo(() => {
-    if (price > 40000) {
-      return "Premium";
-    }
-
-    return "Budget";
-  }, [price]);
-
-  return <h2>{category}</h2>;
-}
-
-export default Product;
-```
-
-------------------------------------------------------------------------
-
-## Example 10 --- Fibonacci
-
-``` jsx
-import { useMemo, useState } from "react";
-
-function fibonacci(n) {
-  if (n <= 1) {
-    return n;
-  }
-
-  return fibonacci(n - 1) + fibonacci(n - 2);
-}
-
-function App() {
-  const [number, setNumber] = useState(10);
-
-  const result = useMemo(() => {
-    return fibonacci(number);
-  }, [number]);
-
-  return (
-    <div>
-      <h2>Result: {result}</h2>
-
-      <button onClick={() => setNumber(number + 1)}>
-        Next
-      </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-# 7. `useCallback`
-
-`useCallback` caches a **function reference**.
-
-It is especially useful when:
-
--   Passing a function to a child component
--   The child uses `React.memo`
--   A function is used as a dependency of another Hook
-
-### Basic Syntax
-
-``` jsx
-const functionName = useCallback(() => {
-  // function
-}, [dependencies]);
-```
-
-> `useCallback` does not automatically make every application faster.
-> Use it when stable function identity is useful.
-
-------------------------------------------------------------------------
-
-## Example 1 --- Basic Callback
-
-``` jsx
-import { useCallback } from "react";
-
-function App() {
-  const sayHello = useCallback(() => {
-    console.log("Hello React");
-  }, []);
-
-  return (
-    <button onClick={sayHello}>
-      Say Hello
-    </button>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 2 --- Callback With State
-
-``` jsx
-import {
-  useCallback,
-  useState
-} from "react";
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  const increase = useCallback(() => {
-    setCount((previous) => previous + 1);
-  }, []);
-
-  return (
-    <div>
-      <h2>{count}</h2>
-      <button onClick={increase}>
-        Add
-      </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 3 --- Pass Function to Child
-
-``` jsx
-import {
-  useCallback,
-  useState
-} from "react";
-
-function Child({ onClick }) {
-  return (
-    <button onClick={onClick}>
-      Child Button
-    </button>
-  );
-}
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  const handleClick = useCallback(() => {
-    console.log("Child clicked");
-  }, []);
-
-  return (
-    <div>
-      <h2>{count}</h2>
-
-      <button onClick={() => setCount(count + 1)}>
-        Parent Count
-      </button>
-
-      <Child onClick={handleClick} />
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 4 --- Counter Callback
-
-``` jsx
-import {
-  useCallback,
-  useState
-} from "react";
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  const add = useCallback(() => {
-    setCount((value) => value + 1);
-  }, []);
-
-  return (
-    <div>
-      <h2>{count}</h2>
-      <button onClick={add}>Add</button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 5 --- Delete Item
-
-``` jsx
-import {
-  useCallback,
-  useState
-} from "react";
-
-function App() {
-  const [items, setItems] = useState([
-    { id: 1, name: "Laptop" },
-    { id: 2, name: "Mouse" }
-  ]);
-
-  const deleteItem = useCallback((id) => {
-    setItems((previous) =>
-      previous.filter((item) => item.id !== id)
-    );
-  }, []);
-
-  return (
-    <div>
-      {items.map((item) => (
-        <p key={item.id}>
-          {item.name}
-
-          <button onClick={() => deleteItem(item.id)}>
-            Delete
-          </button>
-        </p>
-      ))}
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 6 --- Add Item
-
-``` jsx
-import {
-  useCallback,
-  useState
-} from "react";
-
-function App() {
-  const [items, setItems] = useState([]);
-
-  const addItem = useCallback(() => {
-    setItems((previous) => [
-      ...previous,
-      `Item ${previous.length + 1}`
-    ]);
-  }, []);
-
-  return (
-    <div>
-      <button onClick={addItem}>
-        Add Item
-      </button>
-
-      {items.map((item) => (
-        <p key={item}>{item}</p>
-      ))}
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 7 --- Search Callback
-
-``` jsx
-import {
-  useCallback,
-  useState
-} from "react";
-
-function App() {
-  const [query, setQuery] = useState("");
-
-  const search = useCallback((value) => {
-    console.log("Searching for:", value);
-  }, []);
-
-  return (
-    <input
-      value={query}
-      onChange={(e) => {
-        setQuery(e.target.value);
-        search(e.target.value);
-      }}
-      placeholder="Search"
-    />
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 8 --- Form Submit Callback
-
-``` jsx
-import {
-  useCallback,
-  useState
-} from "react";
-
-function App() {
-  const [name, setName] = useState("");
-
-  const submitForm = useCallback(() => {
-    console.log("Submitted:", name);
-  }, [name]);
-
-  return (
-    <div>
-      <input
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-
-      <button onClick={submitForm}>
-        Submit
-      </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 9 --- Callback With Dependency
-
-``` jsx
-import {
-  useCallback,
-  useState
-} from "react";
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  const showCount = useCallback(() => {
-    console.log(count);
-  }, [count]);
-
-  return (
-    <div>
-      <button onClick={() => setCount(count + 1)}>
-        Add
-      </button>
-
-      <button onClick={showCount}>
-        Show Count
-      </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-When `count` changes, React creates a new callback because `count` is a
-dependency.
-
-------------------------------------------------------------------------
-
-## Example 10 --- `useCallback` With `React.memo`
-
-``` jsx
-import {
-  memo,
-  useCallback,
-  useState
-} from "react";
-
-const Child = memo(function Child({ onClick }) {
-  console.log("Child rendered");
-
-  return (
-    <button onClick={onClick}>
-      Child Button
-    </button>
-  );
-});
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  const handleClick = useCallback(() => {
-    console.log("Clicked");
-  }, []);
-
-  return (
-    <div>
-      <h2>{count}</h2>
-
-      <button onClick={() => setCount(count + 1)}>
-        Parent Count
-      </button>
-
-      <Child onClick={handleClick} />
-    </div>
-  );
-}
-
-export default App;
-```
-
-Here `useCallback` keeps the same function reference while its
-dependencies remain unchanged.
-
-------------------------------------------------------------------------
-
-# 8. Custom Hooks
-
-A **Custom Hook** is a reusable function that contains React Hook logic.
-
-Rules:
-
-1.  The name should normally start with `use`.
-2.  A custom Hook can call other Hooks.
-3.  It helps avoid repeating the same logic in multiple components.
-
-------------------------------------------------------------------------
-
-## Example 1 --- `useCounter`
-
-### Custom Hook
-
-``` jsx
-import { useState } from "react";
-
-function useCounter(initialValue = 0) {
-  const [count, setCount] = useState(initialValue);
-
-  const increment = () => {
-    setCount((value) => value + 1);
-  };
-
-  const decrement = () => {
-    setCount((value) => value - 1);
-  };
-
-  const reset = () => {
-    setCount(initialValue);
-  };
-
-  return {
-    count,
-    increment,
-    decrement,
-    reset
-  };
-}
-
-export default useCounter;
-```
-
-### Usage
-
-``` jsx
-import useCounter from "./useCounter";
-
-function App() {
-  const {
-    count,
-    increment,
-    decrement,
-    reset
-  } = useCounter(10);
-
-  return (
-    <div>
-      <h2>{count}</h2>
-
-      <button onClick={increment}>+</button>
-      <button onClick={decrement}>-</button>
-      <button onClick={reset}>Reset</button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 2 --- `useToggle`
-
-``` jsx
-import { useState } from "react";
-
-function useToggle(initialValue = false) {
-  const [value, setValue] = useState(initialValue);
-
-  const toggle = () => {
-    setValue((previous) => !previous);
-  };
-
-  return [value, toggle];
-}
-
-export default useToggle;
-```
-
-### Usage
-
-``` jsx
-import useToggle from "./useToggle";
-
-function App() {
-  const [show, toggle] = useToggle(false);
-
-  return (
-    <div>
-      <button onClick={toggle}>
-        Show / Hide
-      </button>
-
-      {show && <p>Hello React</p>}
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 3 --- `useInput`
-
-``` jsx
-import { useState } from "react";
-
-function useInput(initialValue = "") {
-  const [value, setValue] = useState(initialValue);
-
-  const onChange = (event) => {
-    setValue(event.target.value);
-  };
-
-  return {
-    value,
-    onChange
-  };
-}
-
-export default useInput;
-```
-
-### Usage
-
-``` jsx
-import useInput from "./useInput";
-
-function App() {
-  const name = useInput("");
-
-  return (
-    <div>
-      <input
-        {...name}
-        placeholder="Enter your name"
-      />
-
-      <p>Hello {name.value}</p>
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 4 --- `useDocumentTitle`
-
-``` jsx
-import { useEffect } from "react";
-
-function useDocumentTitle(title) {
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
-}
-
-export default useDocumentTitle;
-```
-
-### Usage
-
-``` jsx
-import useDocumentTitle from "./useDocumentTitle";
-
-function App() {
-  useDocumentTitle("Home Page");
-
-  return <h2>Home</h2>;
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 5 --- `useLocalStorage`
-
-``` jsx
-import {
-  useEffect,
-  useState
-} from "react";
-
-function useLocalStorage(key, initialValue) {
-  const [value, setValue] = useState(() => {
-    const saved = localStorage.getItem(key);
-
-    return saved
-      ? JSON.parse(saved)
-      : initialValue;
-  });
-
-  useEffect(() => {
-    localStorage.setItem(
-      key,
-      JSON.stringify(value)
-    );
-  }, [key, value]);
-
-  return [value, setValue];
-}
-
-export default useLocalStorage;
-```
-
-### Usage
-
-``` jsx
-import useLocalStorage from "./useLocalStorage";
-
-function App() {
-  const [name, setName] =
-    useLocalStorage("name", "");
-
-  return (
-    <input
-      value={name}
-      onChange={(e) => setName(e.target.value)}
-      placeholder="Enter name"
-    />
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 6 --- `useWindowSize`
-
-``` jsx
-import {
-  useEffect,
-  useState
-} from "react";
-
-function useWindowSize() {
-  const [width, setWidth] =
-    useState(window.innerWidth);
-
-  useEffect(() => {
-    const updateSize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    window.addEventListener(
-      "resize",
-      updateSize
-    );
-
-    return () => {
-      window.removeEventListener(
-        "resize",
-        updateSize
-      );
-    };
-  }, []);
-
-  return width;
-}
-
-export default useWindowSize;
-```
-
-### Usage
-
-``` jsx
-import useWindowSize from "./useWindowSize";
-
-function App() {
-  const width = useWindowSize();
-
-  return <h2>Width: {width}px</h2>;
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 7 --- `useFetch`
-
-``` jsx
-import {
-  useEffect,
-  useState
-} from "react";
-
-function useFetch(url) {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(true);
-
-    fetch(url)
-      .then((response) => response.json())
-      .then((result) => {
-        setData(result);
-        setLoading(false);
-      });
-  }, [url]);
-
-  return {
-    data,
-    loading
-  };
-}
-
-export default useFetch;
-```
-
-### Usage
-
-``` jsx
-import useFetch from "./useFetch";
-
-function App() {
-  const { data, loading } = useFetch(
-    "https://jsonplaceholder.typicode.com/users"
-  );
-
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
-  return (
-    <div>
-      {data.map((user) => (
-        <p key={user.id}>{user.name}</p>
-      ))}
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 8 --- `useOnlineStatus`
-
-``` jsx
-import {
-  useEffect,
-  useState
-} from "react";
-
-function useOnlineStatus() {
-  const [online, setOnline] =
-    useState(navigator.onLine);
-
-  useEffect(() => {
-    const onlineHandler = () => {
-      setOnline(true);
-    };
-
-    const offlineHandler = () => {
-      setOnline(false);
-    };
-
-    window.addEventListener(
-      "online",
-      onlineHandler
-    );
-
-    window.addEventListener(
-      "offline",
-      offlineHandler
-    );
-
-    return () => {
-      window.removeEventListener(
-        "online",
-        onlineHandler
-      );
-
-      window.removeEventListener(
-        "offline",
-        offlineHandler
-      );
-    };
-  }, []);
-
-  return online;
-}
-
-export default useOnlineStatus;
-```
-
-### Usage
-
-``` jsx
-import useOnlineStatus from "./useOnlineStatus";
-
-function App() {
-  const online = useOnlineStatus();
-
-  return (
-    <h2>
-      {online
-        ? "You are Online"
-        : "You are Offline"}
-    </h2>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 9 --- `usePrevious`
-
-``` jsx
-import {
-  useEffect,
-  useRef
-} from "react";
-
-function usePrevious(value) {
-  const ref = useRef();
-
-  useEffect(() => {
-    ref.current = value;
-  }, [value]);
-
-  return ref.current;
-}
-
-export default usePrevious;
-```
-
-### Usage
-
-``` jsx
-import {
-  useState
-} from "react";
-
-import usePrevious from "./usePrevious";
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  const previousCount =
-    usePrevious(count);
-
-  return (
-    <div>
-      <h2>Current: {count}</h2>
-      <h2>Previous: {previousCount}</h2>
-
-      <button
-        onClick={() =>
-          setCount(count + 1)
-        }
-      >
-        Add
-      </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-## Example 10 --- `useDebounce`
-
-Debouncing is useful for search boxes and API calls.
-
-``` jsx
-import {
-  useEffect,
-  useState
-} from "react";
-
-function useDebounce(value, delay = 500) {
-  const [debouncedValue, setDebouncedValue] =
-    useState(value);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [value, delay]);
-
-  return debouncedValue;
-}
-
-export default useDebounce;
-```
-
-### Usage
-
-``` jsx
-import {
-  useState
-} from "react";
-
-import useDebounce from "./useDebounce";
-
-function App() {
-  const [search, setSearch] = useState("");
-
-  const debouncedSearch =
-    useDebounce(search, 500);
-
-  return (
-    <div>
-      <input
-        value={search}
-        onChange={(e) =>
-          setSearch(e.target.value)
-        }
-        placeholder="Search"
-      />
-
-      <p>
-        Searching for: {debouncedSearch}
-      </p>
-    </div>
-  );
-}
-
-export default App;
-```
-
-------------------------------------------------------------------------
-
-# 9. Quick Hook Comparison
-
-  -----------------------------------------------------------------------
-  Hook                    Main Purpose            Simple Example
-  ----------------------- ----------------------- -----------------------
-  `useState`              Store changing          Counter
-                          component data          
-
-  `useEffect`             Perform side effects    API call
-
-  `useReducer`            Manage                  Todo
-                          structured/complex      
-                          state                   
-
-  `useContext`            Share data without prop Theme
-                          drilling                
-
-  `useLayoutEffect`       Read/change layout      Measure element
-                          before paint            
-
-  `useMemo`               Cache calculated values Filter products
-
-  `useCallback`           Cache function          Memoized child callback
-                          references              
-
-  Custom Hook             Reuse React logic       `useCounter`
-  -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-# 10. Which Hook Should I Use?
-
-## Need to store changing data?
-
-Use:
-
-``` jsx
-useState()
-```
-
-Example:
-
-``` text
-count
-name
-email
-modal open/close
-```
-
-------------------------------------------------------------------------
-
-## Need an API call?
-
-Usually:
-
-``` jsx
-useEffect()
-```
-
-Example:
-
-``` text
-Fetch users
-Fetch products
-Load dashboard data
-```
-
-------------------------------------------------------------------------
-
-## State logic is becoming complicated?
-
-Use:
-
-``` jsx
-useReducer()
-```
-
-Example:
-
-``` text
-Todo application
-Shopping cart
-Complex form
-Authentication state
-```
-
-------------------------------------------------------------------------
-
-## Need shared application data?
-
-Use:
-
-``` jsx
-useContext()
-```
-
-Example:
-
-``` text
-Theme
-User
-Language
-Authentication
-```
-
-------------------------------------------------------------------------
-
-## Need to measure an element before the browser paints?
-
-Use:
-
-``` jsx
-useLayoutEffect()
-```
-
-Example:
-
-``` text
-Element width
-Element height
-Position
-Scroll adjustment
-```
-
-------------------------------------------------------------------------
-
-## Need to cache an expensive calculation?
-
-Use:
-
-``` jsx
-useMemo()
-```
-
-Example:
-
-``` text
-Large list filtering
-Large calculations
-Sorting large datasets
-```
-
-------------------------------------------------------------------------
-
-## Need to keep the same function reference?
-
-Use:
-
-``` jsx
-useCallback()
-```
-
-Example:
-
-``` text
-Callback passed to React.memo child
-Function used in dependency array
-```
-
-------------------------------------------------------------------------
-
-## Repeating the same Hook logic in multiple components?
-
-Create:
-
-``` jsx
-Custom Hook
-```
-
-Example:
-
-``` text
-useCounter()
-useFetch()
-useLocalStorage()
-useDebounce()
-```
-
-------------------------------------------------------------------------
-
-# 11. Final Practice Project
-
-## Student Management Dashboard
-
-After learning these examples, build a small **Student Management
-Dashboard**.
-
-### Features
-
-``` text
-Student Management Dashboard
-│
-├── Add Student
-├── Delete Student
-├── Edit Student
-├── Search Student
-├── Filter Students
-├── Student Details
-├── Dark Mode
-├── Online/Offline Status
-├── Local Storage
-└── API Data
-```
-
-### Suggested Hook Usage
-
-  Feature                      Hook
-  ---------------------------- --------------------------
-  Student form                 `useState`
-  API loading                  `useEffect`
-  Student operations           `useReducer`
-  Dark mode                    `useContext`
-  Measure dashboard element    `useLayoutEffect`
-  Search/filter optimization   `useMemo`
-  Child callbacks              `useCallback`
-  Reusable form logic          Custom Hook
-  Local storage                Custom `useLocalStorage`
-  Search delay                 Custom `useDebounce`
-
-------------------------------------------------------------------------
-
-# Recommended Learning Order
-
-For beginners, learn the Hooks in this order:
-
-``` text
-1. useState
-      ↓
-2. useEffect
-      ↓
-3. useContext
-      ↓
-4. useReducer
-      ↓
-5. Custom Hooks
-      ↓
-6. useMemo
-      ↓
-7. useCallback
-      ↓
-8. useLayoutEffect
-```
-
-------------------------------------------------------------------------
-
-# Beginner Practice Questions
-
-Try building these without looking at the examples:
-
-1.  Counter with `+`, `-`, and Reset.
-2.  Name input with live preview.
-3.  Like/Unlike button.
-4.  Dark mode toggle.
-5.  Timer using `useEffect`.
-6.  Fetch users from an API.
-7.  Todo app using `useReducer`.
-8.  Theme switcher using `useContext`.
-9.  Search products using `useMemo`.
-10. Child component optimization using `useCallback`.
-11. Create your own `useCounter`.
-12. Create your own `useFetch`.
-13. Create your own `useLocalStorage`.
-14. Create your own `useDebounce`.
-15. Combine multiple Hooks in one mini project.
-
-------------------------------------------------------------------------
-
-# Important Interview Points
-
-### `useState`
-
-**Question:** What is `useState`?
-
-**Answer:** `useState` is a React Hook used to add and manage state in a
-functional component.
-
-------------------------------------------------------------------------
-
-### `useEffect`
-
-**Question:** Why do we use `useEffect`?
-
-**Answer:** It is used to synchronize a component with external systems
-and perform side effects such as API calls, timers, subscriptions, and
-browser APIs.
-
-------------------------------------------------------------------------
-
-### `useReducer`
-
-**Question:** When should we use `useReducer` instead of `useState`?
-
-**Answer:** When state logic is more complex, has multiple related
-transitions, or benefits from centralized action-based updates.
-
-------------------------------------------------------------------------
-
-### `useContext`
-
-**Question:** What problem does `useContext` solve?
-
-**Answer:** It helps share data across components without manually
-passing props through every intermediate component.
-
-------------------------------------------------------------------------
-
-### `useMemo`
-
-**Question:** What does `useMemo` cache?
-
-**Answer:** It caches the result of a calculation between renders until
-its dependencies change.
-
-------------------------------------------------------------------------
-
-### `useCallback`
-
-**Question:** What does `useCallback` cache?
-
-**Answer:** It caches a function reference between renders until its
-dependencies change.
-
-------------------------------------------------------------------------
-
-### `useLayoutEffect`
-
-**Question:** What is the difference between `useEffect` and
-`useLayoutEffect`?
-
-**Answer:** `useLayoutEffect` runs synchronously after DOM updates and
-before the browser paints, while `useEffect` is generally used for
-effects that do not need to block painting.
-
-------------------------------------------------------------------------
-
-### Custom Hook
-
-**Question:** What is a Custom Hook?
-
-**Answer:** A Custom Hook is a JavaScript function whose name starts
-with `use` and that reuses React Hook-based logic across components.
-
-------------------------------------------------------------------------
-
-# Final Cheat Sheet
+# 13. Hook Mental Model
 
 ``` text
 useState
-→ Store state
+  ↓
+Changing local data
 
 useEffect
-→ Side effects
+  ↓
+Synchronize with external systems
 
 useReducer
-→ Complex state logic
+  ↓
+Structured state transitions
 
 useContext
-→ Shared data
+  ↓
+Share values across a component tree
+
+useMemo / useCallback
+  ↓
+Performance and referential stability
 
 useLayoutEffect
-→ DOM/layout work before paint
+  ↓
+DOM/layout work before paint
 
-useMemo
-→ Cache calculated value
-
-useCallback
-→ Cache function reference
-
-Custom Hook
-→ Reuse Hook logic
+Custom Hooks
+  ↓
+Reuse Hook-based logic
 ```
 
 ------------------------------------------------------------------------
 
-## Final Tip
-
-Do not try to memorize all Hooks at once.
-
-First understand:
+# 14. One-Sentence Memory Tricks
 
 ``` text
-State
-  ↓
-Re-render
-  ↓
-Side Effect
-  ↓
-Shared State
-  ↓
-Complex State
-  ↓
-Performance Optimization
-  ↓
-Reusable Logic
+useState       → I need to remember changing data.
+useEffect      → I need to synchronize with something outside rendering.
+useReducer     → My state transitions need structured actions.
+useContext     → Many components need the same value.
+useLayoutEffect→ I need DOM/layout work before paint.
+useMemo        → I want to reuse a calculated value.
+useCallback    → I want to reuse a function reference.
+Custom Hook    → I want to reuse React logic.
 ```
 
-Once this flow is clear, React Hooks become much easier to understand
-and use in real projects.
+------------------------------------------------------------------------
+
+# 15. Final Student Challenge --- React Student Management System
+
+Build a complete Student Management System in stages.
+
+### Level 1 --- Basic
+
+-   Add student
+-   Delete student
+-   Display student list
+-   Count students
+
+Use `useState`.
+
+### Level 2 --- Side Effects
+
+-   Save students to localStorage
+-   Change document title
+-   Load data from an API
+
+Use `useEffect`.
+
+### Level 3 --- Complex State
+
+Move add/delete/edit logic into a reducer.
+
+Use `useReducer`.
+
+### Level 4 --- Shared Data
+
+Create theme and user contexts.
+
+Use `useContext`.
+
+### Level 5 --- Reusable Logic
+
+Create `useLocalStorage`, `useDebounce`, `useFetch`, and `useCounter`.
+
+Use Custom Hooks.
+
+### Level 6 --- Performance
+
+Optimize filtering, sorting, and child callbacks.
+
+Use `useMemo` and `useCallback`.
+
+### Level 7 --- DOM/Layout
+
+Create a dashboard card that measures its own width and adjusts its UI
+before paint.
+
+Use `useLayoutEffect`.
+
+------------------------------------------------------------------------
+
+# Final Goal
+
+When you see React code, ask:
+
+``` text
+What data is changing?
+        ↓
+Where is it stored?
+        ↓
+What causes a re-render?
+        ↓
+Is there an external side effect?
+        ↓
+Is state logic complex enough for a reducer?
+        ↓
+Does another component need the same value?
+        ↓
+Is an expensive calculation being repeated?
+        ↓
+Does function identity matter?
+        ↓
+Is DOM measurement required?
+        ↓
+Can the logic become a reusable Custom Hook?
+```
+
+That is the real objective of learning Hooks: **understand the data
+flow, timing, and reason for each Hook instead of memorizing syntax.**
